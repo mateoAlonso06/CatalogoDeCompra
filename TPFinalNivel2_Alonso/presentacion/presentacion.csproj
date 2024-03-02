@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetallesProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesProducto.Designer.cs">
+      <DependentUpon>DetallesProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperApariencia.cs" />
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DetallesProducto.resx">
+      <DependentUpon>DetallesProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +97,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{e15d7ee8-c7f4-4b1a-8886-84b8d10d00ee}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{73c249e2-5973-4576-bce8-0b798af38a84}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
