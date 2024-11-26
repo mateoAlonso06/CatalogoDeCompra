@@ -15,10 +15,8 @@ Aplicación de escritorio que permite administrar un catálogo de productos. Se 
 - **Arquitectura:** Modelado en capas
 - **GUI:** Windows Forms
 - **Paradigma:** Programación orientada a objetos (POO)
-
-# Product Catalog - Desktop Application
-
 --
+# Product Catalog - Desktop Application
 
 A desktop application to manage a product catalog. It was built using .NET Framework with C#.
 
